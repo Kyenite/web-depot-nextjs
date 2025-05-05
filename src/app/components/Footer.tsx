@@ -1,5 +1,5 @@
 import React from 'react';
-import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon } from 'lucide-react';
+import { GithubIcon, TwitterIcon, InstagramIcon } from 'lucide-react';
 export const Footer = () => {
   return <footer className="w-full bg-slate-800 text-white py-12">
       <div className="container mx-auto px-4">

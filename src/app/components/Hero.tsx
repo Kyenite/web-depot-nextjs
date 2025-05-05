@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { GithubIcon, InstagramIcon, TwitterIcon, MailIcon } from 'lucide-react';
 export const Hero = () => {
   return <section className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white">
@@ -37,7 +38,7 @@ export const Hero = () => {
         </div>
         <div className="md:w-1/2 flex justify-center">
           <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-lg">
-            <img src="/images/my-pic.jpg" alt="John Doe" className="w-full h-full object-cover" />
+            <Image src="/images/my-pic.jpg" alt="John Doe" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>

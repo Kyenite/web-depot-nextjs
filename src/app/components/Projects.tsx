@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { ExternalLinkIcon, GithubIcon } from 'lucide-react';
 export const Projects = () => {
   const projects = [{
@@ -31,7 +32,7 @@ export const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => <div key={index} className="bg-slate-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
               <div className="h-48 overflow-hidden">
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform hover:scale-105" />
+                <Image src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform hover:scale-105" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-800">
