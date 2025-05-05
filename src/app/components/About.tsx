@@ -7,7 +7,7 @@ export const About = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-2">About Me</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            I'm a passionate Information Technology professional with expertise
+            I&apos;m a passionate Information Technology professional with expertise
             in software development, network administration, and cybersecurity.
             My BSIT education has equipped me with both theoretical knowledge
             and practical skills to tackle complex IT challenges.
