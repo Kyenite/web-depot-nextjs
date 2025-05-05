@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { MailIcon, PhoneIcon, MapPinIcon, SendIcon } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
@@ -175,7 +174,7 @@ export const Contact = () => {
               </form>
             </div>
             <div className="hidden lg:block">
-              <Image
+              <img
                 src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                 alt="IT Workspace"
                 className="w-full h-full object-cover"
