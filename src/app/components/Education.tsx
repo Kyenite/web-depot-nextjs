@@ -6,8 +6,8 @@ export const Education = () => {
     institution: 'Saint Michael College of Caraga',
     location: 'Atupan St., Nasipit 8602, Rizal St, Nasipit, Agusan Del Norte',
     period: '2021 - 2025',
-    description: 'Specialized in Web Development.',
-    courses: ['Database Management Systems', 'Network Security', 'Web Development', 'System Administration', 'Data Structures & Algorithms']
+    description: 'Focuses on the study of computer systems, software development, networking, web technologies, and IT infrastructure. It equips students with practical skills and knowledge to design, develop, manage, and maintain information systems and solutions that meet organizational needs.',
+    courses: ['Database Management Systems', 'OOP', 'Network Security', 'Web Development', 'System Administration', 'Data Structures & Algorithms']
   }, {
     degree: 'Technological and Vocational Livelihood - Information and Communication Technology',
     institution: 'Senior High School in Carmen',

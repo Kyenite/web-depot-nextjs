@@ -1,3 +1,7 @@
+'use client'
+
+import { SessionProvider } from "next-auth/react"
+
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
@@ -9,17 +13,21 @@ import { Footer } from './components/Footer';
 
 export default function Home() {
   return (
-    <div className="font-sans bg-slate-50 text-gray-800">
-      <Header />
-      <main className="w-full">
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Education />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <SessionProvider>
+        <div className="font-sans bg-slate-50 text-gray-800">
+        <Header />
+        <main className="w-full">
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Education />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+      </SessionProvider>
+    </>
   );
 }
