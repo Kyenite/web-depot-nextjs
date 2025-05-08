@@ -5,13 +5,13 @@ export const Skills = () => {
     proficiency: 90
   }, {
     name: 'React',
-    proficiency: 85
-  }, {
-    name: 'Node.js',
     proficiency: 80
   }, {
-    name: 'Python',
+    name: 'Node.js',
     proficiency: 75
+  }, {
+    name: 'Tailwind CSS',
+    proficiency: 80
   }, {
     name: 'SQL',
     proficiency: 85
