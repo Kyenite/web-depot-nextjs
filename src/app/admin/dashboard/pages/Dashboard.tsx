@@ -5,7 +5,6 @@ import SkillsForm from './SkillsForm';
 import SoftSkillsForm from './SoftSkillsForm';
 import ProjectsForm from './ProjectsForm';
 import { MenuIcon, LayoutDashboardIcon } from 'lucide-react';
-import { callback } from 'chart.js/helpers';
 
 export default function Dashboard() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
