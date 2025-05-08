@@ -1,5 +1,4 @@
 'use client';
-import { callback } from "chart.js/helpers";
 import { signIn } from "next-auth/react";
 
 export default function redirection() {
