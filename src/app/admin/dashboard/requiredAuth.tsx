@@ -1,9 +1,10 @@
 'use client';
-import { SessionProvider, useSession, signIn } from "next-auth/react";
+import { useSession, signIn } from "next-auth/react";
 import { LoaderPinwheel } from "lucide-react";
 
 export default function AuthRequired({ children }: { children: React.ReactNode }) {
-    const { data: session, status } = useSession();
+    const sessionData = useSession();
+    const status = sessionData.status;
     
     if(status === "authenticated") {
         return children
