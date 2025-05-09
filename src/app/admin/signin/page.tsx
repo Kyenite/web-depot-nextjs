@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { EyeIcon, EyeOffIcon } from 'lucide-react';
 import { signIn } from 'next-auth/react';
@@ -27,16 +27,11 @@ export default function SignIn() {
 
     if (result?.error) {
       console.error('Sign-in failed:', result.error);
-
-      console.log('setError:', error);
       setError(true);
 
     } else {
-      console.log('Sign-in successful:', result);
       router.push("/admin/dashboard");
     }
-
-    console.log('Form submitted', { username, password, rememberMe });
   };
 
   return (
