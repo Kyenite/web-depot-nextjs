@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { EyeIcon, EyeOffIcon } from 'lucide-react';
 import { signIn } from 'next-auth/react';
@@ -10,6 +10,7 @@ export default function SignIn() {
   const [rememberMe, setRememberMe] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState(false);
 
   const router = useRouter();
 
@@ -26,6 +27,10 @@ export default function SignIn() {
 
     if (result?.error) {
       console.error('Sign-in failed:', result.error);
+
+      console.log('setError:', error);
+      setError(true);
+
     } else {
       console.log('Sign-in successful:', result);
       router.push("/admin/dashboard");
@@ -134,6 +139,11 @@ export default function SignIn() {
               </button>
             </div>
           </div> */}
+          {error && (
+            <div className="border border-red-700 bg-red-100 rounded-md mt-4 p-3 text-center text-red-700">
+              Invalid Credentials
+            </div>
+          )}
           <p className="mt-8 text-center text-sm text-gray-500 hidden">
             Not a member?{' '}
             <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
