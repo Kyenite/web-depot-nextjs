@@ -37,6 +37,10 @@ export const options: NextAuthOptions = {
             },
         })
     ],
+    theme: {
+        colorScheme: "light",
+        logo: "/images/icon.ico",
+    },
     session: {
         strategy: "jwt"
     },
@@ -58,5 +62,8 @@ export const options: NextAuthOptions = {
             }
             return session;
         }
+    },
+    pages: {
+        signIn: "/admin/signin"
     }
 }

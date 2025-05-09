@@ -1,14 +1,15 @@
-'use client'
-export const dynamic = 'force-dynamic';
-import RequireAuth from "./requiredAuth";
+'use client';
 import { SessionProvider } from "next-auth/react";
+import AuthRequired from "./requiredAuth";
+import Dashboard from "./pages/Dashboard";
 
-export default function main() {
+export default function Main() {
     return (
-        <>
-            <SessionProvider>
-                <RequireAuth />
-            </SessionProvider>
-        </>
+        <SessionProvider>
+            <AuthRequired>
+                <Dashboard />
+            </AuthRequired>
+        </SessionProvider>
     )
+    
 }

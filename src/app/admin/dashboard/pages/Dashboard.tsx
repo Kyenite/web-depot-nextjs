@@ -46,7 +46,7 @@ export default function Dashboard() {
                 </button>
               </li>
               <li>
-                <button onClick={() => signOut({ callbackUrl: "/admin" })} className={`w-full text-left px-4 py-2 rounded-md ${activeTab === 'projects' ? 'bg-indigo-100 text-indigo-700 font-medium' : 'hover:bg-gray-100'}`}>
+                <button onClick={() => signOut({ callbackUrl: "/admin" })} className={`w-full text-left px-4 py-2 rounded-md active:bg-indigo-100 active:text-indigo-700 active:font-medium`}>
                   Sign Out
                 </button>
               </li>

@@ -18,7 +18,7 @@ export default function redirection() {
                             <div className="pb-4">
                                 <div >
                                     <button className="w-full px-4 py-2 mt-4 bg-blue-600 text-lg text-white font-medium rounded-md hover:bg-blue-700 transition duration-300"
-                                    onClick={() => signIn(undefined, {callbackUrl: "/dashboard"})}>
+                                    onClick={() => signIn(undefined, {callbackUrl: "/admin/dashboard"})}>
                                         Confirm
                                     </button>
                                 </div>
