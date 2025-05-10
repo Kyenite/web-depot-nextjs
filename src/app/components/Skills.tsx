@@ -16,10 +16,10 @@ export const Skills = () => {
     name: 'SQL',
     proficiency: 85
   }, {
-    name: 'Network Security',
-    proficiency: 70
+    name: 'MongoDB',
+    proficiency: 82
   }, {
-    name: 'Cloud Computing',
+    name: 'Networking',
     proficiency: 75
   }, {
     name: 'System Administration',
