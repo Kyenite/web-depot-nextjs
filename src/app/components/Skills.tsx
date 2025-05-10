@@ -6,7 +6,7 @@ export const Skills = () => {
   }, {
     name: 'React',
     proficiency: 80
-  },, {
+  }, {
     name: 'Laravel',
     proficiency: 80
   }, {
