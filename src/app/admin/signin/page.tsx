@@ -26,7 +26,6 @@ export default function SignIn() {
     })
 
     if (result?.error) {
-      console.error('Sign-in failed:', result.error);
       setError(true);
 
     } else {
