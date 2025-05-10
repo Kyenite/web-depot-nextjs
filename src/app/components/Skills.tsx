@@ -6,9 +6,12 @@ export const Skills = () => {
   }, {
     name: 'React',
     proficiency: 80
+  },, {
+    name: 'Laravel',
+    proficiency: 80
   }, {
-    name: 'Node.js',
-    proficiency: 75
+    name: 'NextJS',
+    proficiency: 78
   }, {
     name: 'Tailwind CSS',
     proficiency: 80
