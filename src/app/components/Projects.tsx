@@ -15,6 +15,13 @@ export const Projects = () => {
     tags: ['Laravel', 'Bootstrap', 'MySql'],
     github: 'https://github.com/Kyenite/MEMBERSHIP-IDENTIFICATION-SYSTEM',
     live: 'http://my-mis.infinityfreeapp.com/'
+  }, {
+    title: 'DIMENSION-PH',
+    description: `Developed a company landing page for recruting and showing company's purpose & goals.`,
+    image: '/images/dimension-ph.jpg',
+    tags: ['React', 'NextJS', 'MongoDB', 'Tailwind CSS'],
+    github: 'https://github.com/Kyenite/dimension-ph',
+    live: 'http://www.dimension-ph.com/'
   }];
   return <section id="projects" className="w-full bg-white py-20">
       <div className="container mx-auto px-4">
